@@ -1,18 +1,18 @@
 public class Main {
     public static void main(String[] args) {
 
-        int x = 500;                 // Начальный счет
-        int y = 999;               // Сумма пополнения
-        int bonus = y / 100;       // Количество бонусов
-        int finaL;                // Итоговый баланс
+        int startedBalance = 500;                 // Начальный счет
+        int amount = 999;               // Сумма пополнения
+        int bonus = amount / 100;       // Количество бонусов
+        int finalBalance;                // Итоговый баланс
 
-        if (y >= 1000) {
-            finaL = x + y + bonus;
-            System.out.println(("Итоговый счет ") + finaL);
+        if (amount >= 1000) {
+            finalBalance = startedBalance + amount + bonus;
+            System.out.println(("Итоговый счет ") + finalBalance);
             System.out.println(("Бонусов ") + bonus);
         } else {
-            finaL = x + y;
-            System.out.println(("Итоговый счёт ") + finaL);
+            finalBalance = startedBalance + amount;
+            System.out.println(("Итоговый счёт ") + finalBalance);
             System.out.println("Бонусов нет");
         }
 
